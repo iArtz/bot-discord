@@ -2,6 +2,18 @@
   "name": "bot-dis",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "iArtz <kanitphong@uservices-thailand.com>",
-  "license": "MIT"
+  "author": "iArtz <iart@aboutdev.io>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "node-fetch": "^3.2.3"
+  }
 }
