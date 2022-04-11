@@ -10,10 +10,10 @@
     "start": "node src/index.js"
   },
   "devDependencies": {
-    "dotenv": "^16.0.0",
     "nodemon": "^2.0.15"
   },
   "dependencies": {
-    "node-fetch": "^3.2.3"
+    "node-fetch": "^3.2.3",
+    "dotenv": "^16.0.0"
   }
 }
