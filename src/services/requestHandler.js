@@ -1,10 +1,10 @@
 import fetch from 'node-fetch'
 
-import { BASE_URL, CHANNEL } from '../constants.js'
+import { BASE_URL } from '../constants.js'
 import { nonce } from '../services/nonceGenereate.js'
 import { randomWord } from './random.js'
 
-const requestHandler = (token) => {
+const requestHandler = ({ token, channel, room }) => {
   const json = {
     content: randomWord(),
     nonce: nonce(),
@@ -27,7 +27,7 @@ const requestHandler = (token) => {
       'x-debug-options': 'bugReporterEnabled',
       'x-discord-locale': 'en-US',
     },
-    referrer: BASE_URL,
+    referrer: `${BASE_URL}/${channel}/${room}`,
     referrerPolicy: 'strict-origin-when-cross-origin',
     body: body,
     method: 'POST',
@@ -35,11 +35,13 @@ const requestHandler = (token) => {
     credentials: 'include',
   }
   const response = fetch(
-    'https://discord.com/api/v9/channels/' + CHANNEL + '/messages',
+    'https://discord.com/api/v9/channels/' + channel + '/messages',
     config
   )
     .then((res) => res.json())
-    .then((data) => console.log(data.content, data.author.username))
+    .then((data) =>
+      console.table([data.content, data.author.username, data.channel_id])
+    )
     .catch((error) => console.log(error))
 }
 
