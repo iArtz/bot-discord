@@ -4,7 +4,7 @@ import { BASE_URL } from '../constants.js'
 import { nonce } from '../services/nonceGenereate.js'
 import { randomWord } from './random.js'
 
-const requestHandler = ({ token, channel, room }) => {
+const requestHandler = ({ token, channel }) => {
   const json = {
     content: randomWord(),
     nonce: nonce(),
@@ -27,7 +27,6 @@ const requestHandler = ({ token, channel, room }) => {
       'x-debug-options': 'bugReporterEnabled',
       'x-discord-locale': 'en-US',
     },
-    referrer: `${BASE_URL}/${channel}/${room}`,
     referrerPolicy: 'strict-origin-when-cross-origin',
     body: body,
     method: 'POST',
