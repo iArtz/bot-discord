@@ -1,6 +1,6 @@
 import 'dotenv/config'
 import express from 'express'
-import { start, test } from './app.js'
+import { start } from './app.js'
 
 try {
   if (!process.env.CHANNEL_A) throw new Error('CHANNEL_A is not define.')
