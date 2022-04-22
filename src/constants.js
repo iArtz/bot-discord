@@ -1,7 +1,8 @@
 const MESSAGE = [
-  'ปั่นๆ',
-  'ซู้ดๆ',
+  '👀',
+  ':star1:',
   '🔥',
+  ':hype_pepe:',
   ':v_tone2: ',
   ':love_you_gesture_tone1:',
   ':pig:',
