@@ -2,7 +2,6 @@ const MESSAGE = [
   '👀',
   '🔥',
   '❤️',
-  'https://cdn.discordapp.com/attachments/953962047056539658/966965658686488576/SwingDanceSwingYourHipsGIF.gif',
   '👌',
   '👍',
   ':love_you_gesture_tone1:',
