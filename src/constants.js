@@ -1,6 +1,5 @@
 const MESSAGE = [
   '👀',
-  ':star1:',
   '🔥',
   ':hype_pepe:',
   ':v_tone2: ',
