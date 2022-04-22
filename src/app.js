@@ -5,7 +5,7 @@ import { CHANNELS } from './constants.js'
 
 const start = () => {
   TOKENS.map((token) => {
-    const minutes = randomMinMax(1, 5) * 60000
+    const minutes = randomMinMax(1, 2) * 60000
     const timeout = minutes
     setInterval(() => {
       // Evo Land
