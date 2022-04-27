@@ -6,8 +6,15 @@ const MESSAGE = [
   '👍',
   ':love_you_gesture_tone1:',
   ':pig:',
+  'keep going!',
+  "I CAN'T STOP!!!",
+  'les gooo',
+  'excited',
+  'huge project, Myria',
+  'keep going',
+  'no sleeping',
 ]
-const CHANNELS = [process.env.CHANNEL_A, process.env.CHANNEL_B]
+const CHANNELS = [process.env.CHANNEL]
 const BASE_URL = `https://discord.com/channels`
 const TOKENS = [process.env.TOKEN_P_OHM, process.env.TOKEN_I_ART]
 
