@@ -7,5 +7,5 @@ export const randomMinMax = (min, max) => {
 }
 
 export const randomWord = () => {
-  return MESSAGE[randomMinMax(0, 4)]
+  return MESSAGE[randomMinMax(0, 13)]
 }
