@@ -15,7 +15,6 @@ const MESSAGE = [
   'no sleeping',
 ]
 const CHANNELS = [process.env.CHANNEL]
-const BASE_URL = `https://discord.com/channels`
 const TOKENS = [process.env.TOKEN_P_OHM, process.env.TOKEN_I_ART]
 
 export { MESSAGE, CHANNELS, BASE_URL, TOKENS }

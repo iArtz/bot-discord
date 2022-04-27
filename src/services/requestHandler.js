@@ -1,6 +1,5 @@
 import fetch from 'node-fetch'
 
-import { BASE_URL } from '../constants.js'
 import { nonce } from '../services/nonceGenereate.js'
 import { randomWord } from './random.js'
 
