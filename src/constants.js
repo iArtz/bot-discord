@@ -17,4 +17,4 @@ const MESSAGE = [
 const CHANNELS = [process.env.CHANNEL]
 const TOKENS = [process.env.TOKEN_P_OHM, process.env.TOKEN_I_ART]
 
-export { MESSAGE, CHANNELS, BASE_URL, TOKENS }
+export { MESSAGE, CHANNELS, TOKENS }
