@@ -38,7 +38,7 @@ const requestHandler = ({ token, channel }) => {
   )
     .then((res) => res.json())
     .then((data) =>
-      console.table([data.content, data.author.username, data.channel_id])
+      console.table([data.content, data?.author?.username, data.channel_id])
     )
     .catch((error) => console.log(error))
 }

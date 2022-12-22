@@ -1,20 +1,5 @@
-const MESSAGE = [
-  '👀',
-  '🔥',
-  '❤️',
-  '👌',
-  '👍',
-  ':love_you_gesture_tone1:',
-  ':pig:',
-  'keep going!',
-  "I CAN'T STOP!!!",
-  'les gooo',
-  'excited',
-  'huge project, Myria',
-  'keep going',
-  'no sleeping',
-]
+const MESSAGE = ['GM', 'gM', 'Gm', 'GN', 'Gn', 'gN', 'HI', 'Hi']
 const CHANNELS = [process.env.CHANNEL]
-const TOKENS = [process.env.TOKEN_P_OHM, process.env.TOKEN_I_ART]
+const TOKENS = [process.env.TOKEN]
 
 export { MESSAGE, CHANNELS, TOKENS }

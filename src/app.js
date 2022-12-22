@@ -5,7 +5,8 @@ import { CHANNELS } from './constants.js'
 
 const start = () => {
   TOKENS.map((token) => {
-    const minutes = randomMinMax(2, 6) * 60000
+    requestHandler({ token, channel: CHANNELS[0] })
+    const minutes = randomMinMax(30, 60) * 60000
     const timeout = minutes
     setInterval(() => {
       requestHandler({ token, channel: CHANNELS[0] })
