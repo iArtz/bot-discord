@@ -1,6 +1,7 @@
 import 'dotenv/config'
 import express from 'express'
 import { start } from './app.js'
+import { TOKENS } from './constants.js'
 
 try {
   if (!process.env.CHANNEL) throw new Error('CHANNEL is not define.')
